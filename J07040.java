@@ -16,7 +16,7 @@ public class J07040 {
             set1.addAll(Arrays.asList(x.toLowerCase().trim().split("\\s+")));
         }
 
-        while(sc.hasNextLine()) {
+        while(sc.hasNext()) {
             String s = sc.nextLine().trim().toLowerCase();
             list2.addAll(Arrays.asList(s.split("\\s+")));
 
