@@ -10,9 +10,9 @@ public class J07021 {
         Scanner sc = new Scanner(new File("DATA.in"));
 //        đọc dữ liệu tuwf file, só dòng khong biết trước,
         String s ;
-        while (true) {
+        while (sc.hasNext()) {
             s=sc.nextLine().toLowerCase().trim();
-            String [] a =  s.split("\\s+");
+            String [] a =  s.replaceAll("\\s+"," ").split("\\s+");
             if(a[0].compareTo("end")==0){
                 break;
             }

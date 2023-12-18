@@ -21,7 +21,6 @@ public class J08015 {
                 }
             }
             long ans = 0L;
-            List<Long> l = new ArrayList<>(m.keySet());
             for (Long i : a) {
                 Long x = k - i;
                 if (m.containsKey(x)) {

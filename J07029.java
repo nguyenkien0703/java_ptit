@@ -1,13 +1,10 @@
 package com.mycompany.bai1;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.text.CollationElementIterator;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Scanner;
 
 public class J07029 {
     static boolean check(int n ) {
@@ -23,7 +20,6 @@ public class J07029 {
 
         ArrayList<Integer> a =(ArrayList<Integer>) in.readObject();
         ArrayList<Integer> prime = new ArrayList<>();
-        Integer kien ;
         int [] f = new int [1000005];
         for(Integer x : a  ){
             if(check(x)){
